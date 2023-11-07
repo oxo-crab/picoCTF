@@ -43,7 +43,7 @@ Opening  `program.deb` showed that it had steghide file in it, meaning steghide 
 
 After applying in steghide on three image only `picture3.bmp` responded.
 
-`steghide extract -sf picture3.bmp -p 'DUEDILIGENCE`
+`steghide extract -sf picture3.bmp -p 'DUEDILIGENCE'`
 
 It stored the flag in a txt file which i read.
 
@@ -51,5 +51,15 @@ It stored the flag in a txt file which i read.
 
 *flag :- picoCTF{h1dd3n_1n_pLa1n_51GHT_18375919}*
 
+---
 
+### MacroHard WeakEdge
+
+A ppt file is essentially compressed file, after extracting different files from it i get the file `hidden` from the `SlideMaster`folder in `ppt` folder.
+
+the content of this hidden fodler is : "Z m x h Z z o g c G l j b 0 N U R n t E M W R f d V 9 r b j B 3 X 3 B w d H N f c l 9 6 M X A 1 f Q"
+
+This seems to be base64 encoded, so after docing it i get the flag.
+
+flag:- picoCTF{D1d_u_kn0w_ppts_r_z1p5}
 
