@@ -43,7 +43,7 @@ Opening  `program.deb` showed that it had steghide file in it, meaning steghide 
 
 After applying in steghide on three image only `picture3.bmp` responded.
 
-`steghide extract -sf picture3.bmp -p 'DUEDILIGENCE'
+`steghide extract -sf picture3.bmp -p 'DUEDILIGENCE`
 
 It stored the flag in a txt file which i read.
 
