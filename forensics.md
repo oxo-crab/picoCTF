@@ -21,8 +21,35 @@ final image:
 
 ![image](https://github.com/oxo-crab/picoCTF/assets/111520157/1c0e64f1-feae-4e85-9ba5-aa3e7a286dba)
 
-flag: - picoCTF{qu1t3_a_v13w_2020}
+/flag :- picoCTF{qu1t3_a_v13w_2020}*
 
 ---
 
 ### trivial ftp
+
+the file `tftp.pcapng` is a 'capture file format`, i opened this in Wireshark and viewed the objects available
+
+![image](https://github.com/oxo-crab/picoCTF/assets/111520157/d2599b1b-8455-407a-a62f-194cd0603ec0)
+
+after saving these files, i went through them.
+I copied the text from intruction.txt and plan and decoded them using rot13
+
+![image](https://github.com/oxo-crab/picoCTF/assets/111520157/f76ad5bc-8aca-43b5-86e7-4a150c70f85b)
+
+![image](https://github.com/oxo-crab/picoCTF/assets/111520157/e0bd64cf-35cd-4558-9817-cb8c1a21f367)
+
+According to it i am supposed to check the plan file and then it revealed that it used `program.deb` with `DUEDILIGENCE` and i had to check out the photos.
+Opening  `program.deb` showed that it had steghide file in it, meaning steghide was used to hide the flag in the pictures with passcode being `DUEDILIGENCE`.
+
+After applying in steghide on three image only `picture3.bmp` responded.
+
+`steghide extract -sf picture3.bmp -p 'DUEDILIGENCE'
+
+It stored the flag in a txt file which i read.
+
+`cat flag.txt`
+
+*flag :- picoCTF{h1dd3n_1n_pLa1n_51GHT_18375919}*
+
+
+
