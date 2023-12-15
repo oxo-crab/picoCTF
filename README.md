@@ -1,4 +1,5 @@
 # picoCTF
 stuff
 
-![image](https://github.com/oxo-crab/picoCTF/assets/111520157/34feb84a-1c2f-4884-b55b-8c19b36937ad)
+![image](https://github.com/oxo-crab/picoCTF/assets/111520157/99cc4cce-883b-4218-b8ac-cd2a3ef5bcd0)
+
